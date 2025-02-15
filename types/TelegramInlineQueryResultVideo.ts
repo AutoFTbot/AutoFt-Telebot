@@ -1,5 +1,6 @@
 import TelegramInlineQueryResult from './TelegramInlineQueryResult.js';
 import TelegramInputMessageContent from './TelegramInputMessageContent.js';
+import TelegramInlineKeyboardMarkup from './TelegramInlineKeyboardMarkup.js';
 
 export default class TelegramInlineQueryResultVideo extends TelegramInlineQueryResult {
 	video_url: string;
@@ -11,7 +12,7 @@ export default class TelegramInlineQueryResultVideo extends TelegramInlineQueryR
 	caption?: string;
 	parse_mode?: string;
 	caption_entities?: string;
-	// reply_markup?: TelegramInlineKeyboardMarkup;
+	reply_markup?: TelegramInlineKeyboardMarkup;
 	input_message_content?: TelegramInputMessageContent;
 	constructor(video: string) {
 		super('video');
